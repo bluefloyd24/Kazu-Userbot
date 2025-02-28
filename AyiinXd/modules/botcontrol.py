@@ -1038,7 +1038,7 @@ async def bot_start(event):
                 my_mention=my_mention,
             )
         else:
-            start_msg = f"𝗛𝗮𝗹𝗼 {mention}**!**\n     Saya adalah {my_first}\n     Bantuan untuk [{OWNER}](tg://user?id={OWNER_ID})\n     Spam di bot auto banned!\n     Jalankan aku [𝗕𝗹𝘂𝗲𝗳𝗹𝗼𝘆𝗱-Userbot](https://github.com/bluefloyd24/Kazu-Userbot)"
+            start_msg = f"𝗛𝗮𝗹𝗼 {mention}**!**\n     Saya adalah {my_first}\n     Bantuan untuk [{OWNER}](tg://user?id={OWNER_ID})\n     Spam di bot auto banned!\n     Jalankan aku [𝗥𝗼𝗲𝗺𝗮𝗵 𝗝𝗮𝘀𝗲𝗯](https://github.com/roemahjaseb/Kazu-Userbot)"
         buttons = [
             (
                 Button.url("Group", f"https://t.me/{GROUP}"),
