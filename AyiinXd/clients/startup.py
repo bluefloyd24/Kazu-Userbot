@@ -17,8 +17,9 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "EOL\nRoemahjaseb-Userbot v{} Copyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/roemahjase>"
-MSG_BLACKLIST = "Roemahjaseb-Userbot v{}\nCopyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/roemahjase>"
+EOL = "EOL"
+MSG_BLACKLIST = None  # Jangan mencetak pesan ini di log utama"
+
 
 async def ayiin_client(client):
     client.me = await client.get_me()
