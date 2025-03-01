@@ -2,7 +2,7 @@
 
 import sys
 from telethon.utils import get_peer_id
-from Roemahjaseb.ayiin.events import ajg
+from AyiinXd.ayiin.events import ajg
 from Roemahjaseb import BOT_TOKEN
 
 # Cek apakah BOT_VER ada, jika tidak gunakan default
