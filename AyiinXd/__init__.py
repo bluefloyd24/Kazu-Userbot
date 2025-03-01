@@ -219,7 +219,7 @@ ALIVE_TEKS_CUSTOM = os.environ.get(
     "im alive, what's your command?")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME",𝗥𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯-Userbot")
+ALIVE_NAME = os.environ.get(ALIVE_NAME = os.environ.get("ALIVE_NAME", "Roemahjaseb-Userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✨")
