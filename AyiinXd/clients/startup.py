@@ -66,14 +66,20 @@ def multiayiin():
         LOGS.error(f"Error saat menjalankan bot: {str(e)}")
     if BOT_TOKEN:
         try:
-            user = tgbot.get_me()
-            name = user.first_name
-            uname = user.username
-            LOGS.info(
-                f"BOT_TOKEN detected!\n┌ First Name: {name}\n└ Username: @{uname}\n——"
-            )
-        except Exception as e:
-            LOGS.error(f"Error saat mengakses BOT_TOKEN: {str(e)}")
+    bot.start()
+    LOOP.run_until_complete(ajg())
+    LOOP.run_until_complete(ayiin_client(bot))  # Ganti ke ayiin_client
+    user = bot.get_me()
+    name = user.first_name
+    uid = user.id
+    LOGS.info(
+        f"STRING_SESSION detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——"
+    )
+    if user.id in blacklistayiin:
+        LOGS.warning(MSG_BLACKLIST.format(version))
+        sys.exit(1)
 
+except Exception as e:
+    LOGS.error(f"Error saat menjalankan bot: {str(e)}")
     if not STRING_SESSION:
         LOGS.warning("STRING_SESSION tidak ditemukan! Harap periksa kembali.")
