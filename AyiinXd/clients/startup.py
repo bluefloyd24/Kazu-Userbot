@@ -1,10 +1,4 @@
-# Man - UserBot
-# Copyright (c) 2022 Man-Userbot
-# Credits: @mrismanaziz || https://github.com/mrismanaziz
-#
-# This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
-# t.me/SharingUserbot & t.me/Lunatic0de
-
+# repack by blue. #
 import sys
 
 from telethon.utils import get_peer_id
@@ -26,11 +20,9 @@ from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 EOL = "EOL\nRoemahjaseb-Userbot v{} Copyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/roemahjase>"
 MSG_BLACKLIST = "Roemahjaseb-Userbot v{}\nCopyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/roemahjase>"
 
-
 async def ayiin_client(client):
     client.me = await client.get_me()
     client.uid = get_peer_id(client.me)
-
 
 def multiayiin():
     if 6037364404 not in DEVS:
@@ -59,7 +51,6 @@ def multiayiin():
                 sys.exit(1)
         except Exception as e:
             LOGS.info(str(e))
-
 
     if BOT_TOKEN:
         try:
