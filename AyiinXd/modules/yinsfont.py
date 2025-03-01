@@ -585,7 +585,7 @@ async def _(ayiin):
 @ayiin_cmd(pattern="lf(.*)(|$)")
 async def fonts(yins):
     ayiin = await edit_or_reply(yins,
-                                **style fonts.**\n\n"        
+                                "**style fonts.**"        
                                 "**• smallcap     > ɪʀᴀʙʜᴀsᴇʙ**\n"
                                 "**• monospace    > 𝚛𝚘𝚎𝚖𝚊𝚑𝚓𝚊𝚜𝚎𝚋**\n"
                                 "**• outline      > 𝕣𝕠𝕖𝕞𝕒𝕙𝕛𝕒𝕤𝕖𝚋**\n"
