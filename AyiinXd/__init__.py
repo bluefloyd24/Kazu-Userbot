@@ -85,7 +85,7 @@ if CONFIG_CHECK := os.environ.get(
 
 while 0 < 6:
     _DEVS = get(
-        "https://github.com/roemahjaseb/Kazu-Userbot/blob/ee308a94593b2cb631903a43efcd0c287aabf319/app.json"
+        "https://raw.githubusercontent.com/roemahjaseb/roemahjase/Kazu-Userbot/app.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
