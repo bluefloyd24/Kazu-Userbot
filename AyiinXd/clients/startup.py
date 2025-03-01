@@ -1,4 +1,5 @@
 # repack by blue. #
+
 import sys
 
 from telethon.utils import get_peer_id
@@ -17,23 +18,23 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
+
 async def ayiin_client(client):
     client.me = await client.get_me()
     client.uid = get_peer_id(client.me)
 
+
 def multiayiin():
-    if 6037364404 not in DEVS:
-        LOGS.warning(f"Developer ID {6037364404} not found in DEVS! Version: {version}")
+    if 1331659203 not in DEVS:
+        LOGS.warning(EOL.format(version))
         sys.exit(1)
     if -1001287188817 not in GBL:
-        LOGS.warning(f"Group ID -1001287188817 not found in GBL! Version: {version}")
+        LOGS.warning(EOL.format(version))
         sys.exit(1)
-    if 6037364404 not in DEFAULT:
-        LOGS.warning(f"Developer ID {6037364404} not found in DEFAULT! Version: {version}")
+    if 1331659203 not in DEFAULT:
+        LOGS.warning(EOL.format(version))
         sys.exit(1)
-    
     failed = 0
-    
     if STRING_SESSION:
         try:
             bot.start()
@@ -46,10 +47,11 @@ def multiayiin():
                 f"STRING_SESSION detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——"
             )
             if user.id in blacklistayiin:
-                LOGS.warning(f"{name} is blacklisted! Version: {version}")
+                LOGS.warning(MSG_BLACKLIST.format(name, version))
                 sys.exit(1)
         except Exception as e:
-            LOGS.info(f"Error while using STRING_SESSION: {str(e)}")
+            LOGS.info(str(e))
+
 
     if BOT_TOKEN:
         try:
@@ -60,7 +62,7 @@ def multiayiin():
                 f"BOT_TOKEN detected!\n┌ First Name: {name}\n└ Username: @{uname}\n——"
             )
         except Exception as e:
-            LOGS.info(f"Error while using BOT_TOKEN: {str(e)}")
+            LOGS.info(str(e))
 
     if not STRING_SESSION:
-        LOGS.info("STRING_SESSION is not defined.")
+        LOGS.info(str(e))
