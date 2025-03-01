@@ -897,8 +897,8 @@ upd_16: "**Sinkronisasi Paksa Ke Kode Userbot Terbaru, Harap Tunggu...**"
 upd_17: "Ketik `{}update deploy` Untuk Mengupdate 𝗥𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯-Userbot"
 upd_18: "**Quick update telah dinonaktifkan untuk pembaruan ini. Gunakan** `{}update deploy` **sebagai gantinya.**"
 upd_19: "{}\n**Direktori** `{}` **Tidak Dapat Di Temukan.**"
-upd_20: "**[•]** - Proses Update\𝗥𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯-Userbot : `{}`"
-upd_21: "**[•]** - Proses Update\𝗥𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯-Userbot : `Menginstall Pembaruan...`"
+upd_20: "**[•]** - Proses Update\nRoemahjaseb-Userbot : `{}`"
+upd_21: "**[•]** - Proses Update\nRoemahjaseb-Userbot : `Menginstall Pembaruan...`"
 
 # upload_download tools
 updo_1: "Berhasil diunduh ke `{}`!!!"
