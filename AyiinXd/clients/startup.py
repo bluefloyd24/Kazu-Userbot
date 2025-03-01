@@ -3,15 +3,15 @@
 import sys
 from telethon.utils import get_peer_id
 from AyiinXd.ayiin.events import ajg
-from Roemahjaseb import BOT_TOKEN
+from AyiinXd import BOT_TOKEN
 
 # Cek apakah BOT_VER ada, jika tidak gunakan default
 try:
-    from Roemahjaseb import BOT_VER as version
+    from AyiinXd import BOT_VER as version
 except ImportError:
     version = "1.0"
 
-from Roemahjaseb import (
+from AyiinXd import (
     DEFAULT,
     DEVS,
     LOGS,
@@ -21,13 +21,13 @@ from Roemahjaseb import (
     bot,
     tgbot,
 )
-from Roemahjaseb.modules.gcast import GCAST_BLACKLIST as GBL
+from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
 # Perbaikan EOL agar tidak error
 EOL = "Roemahjaseb-Userbot v{} Copyright © 2025 Roemahjaseb• <https://github.com/roemahjaseb/Roemahjaseb-Ubot>"
 MSG_BLACKLIST = "Roemahjaseb-Userbot v{}\nCopyright © 2025 Roemahjaseb• <https://github.com/roemahjaseb/Roemahjaseb-Ubot>"
 
-async def roemahjaseb_client(client):
+async def ayiin_client(client):
     client.me = await client.get_me()
     client.uid = get_peer_id(client.me)
 
@@ -49,22 +49,21 @@ def multiayiin():
         sys.exit(1)
 
     if STRING_SESSION:
-        try:
-            bot.start()
-            LOOP.run_until_complete(ajg())
-            LOOP.run_until_complete(roemahjaseb_client(bot))
-            user = bot.get_me()
-            name = user.first_name
-            uid = user.id
-            LOGS.info(
-                f"STRING_SESSION detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——"
-            )
-            if user.id in blacklistayiin:
-                LOGS.warning(MSG_BLACKLIST.format(version))
-                sys.exit(1)
-        except Exception as e:
-            LOGS.error(f"Error saat menjalankan bot: {str(e)}")
-
+    try:
+        bot.start()
+        LOOP.run_until_complete(ajg())
+        LOOP.run_until_complete(ayiin_client(bot))  # Ganti ke ayiin_client
+        user = bot.get_me()
+        name = user.first_name
+        uid = user.id
+        LOGS.info(
+            f"STRING_SESSION detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——"
+        )
+        if user.id in blacklistayiin:
+            LOGS.warning(MSG_BLACKLIST.format(version))
+            sys.exit(1)
+    except Exception as e:
+        LOGS.error(f"Error saat menjalankan bot: {str(e)}")
     if BOT_TOKEN:
         try:
             user = tgbot.get_me()
