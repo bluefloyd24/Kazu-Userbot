@@ -585,16 +585,18 @@ async def _(ayiin):
 @ayiin_cmd(pattern="lf(.*)(|$)")
 async def fonts(yins):
     ayiin = await edit_or_reply(yins,
-                             "**style fonts.**"
-"• smallcap     > **ɪʀᴀʙʜᴀsᴇʙ**\n"
- "• monospace    > **𝚛𝚘𝚎𝚖𝚊𝚑𝚓𝚊𝚜𝚎𝚋**\n"
-"• outline      > **𝕣𝕠𝕖𝕞𝕒𝕙𝕛𝕒𝕤𝚎𝚋**\n"
- "• script       > **𝓇𝑜𝑒𝓂𝒶𝒽𝒋𝒂𝓈𝑒𝒷**\n"
-"• blackbubbles > **🅡︎🅞︎🅔︎🅜︎🅐︎🅗︎🅙︎🅐︎🅢︎🅔︎🅑︎**\n"
- "• bubbles      > **Ⓙ︎ⓞ︎Ⓔ︎Ⓜ︎Ⓐ︎Ⓗ︎ⓙ︎Ⓐ︎Ⓢ︎Ⓔ︎Ⓑ︎**\n"
- "• bold         > **𝗿𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯**\n"
- "• bolditalic   > **𝙧𝙤𝙚𝙢𝙖𝙝𝙟𝙖𝙨𝙚𝙗**\n\n"
-"**𝗥𝗢𝗘𝗠𝗔𝗛𝗝𝗔𝗦𝗘𝗕-userbot!**"
+        "**style fonts.**\n"
+        "• smallcap     > **ɪʀᴀʙʜᴀsᴇʙ**\n"
+        "• monospace    > **𝚛𝚘𝚎𝚖𝚊𝚑𝚓𝚊𝚜𝚎𝚋**\n"
+        "• outline      > **𝕣𝕠𝕖𝕞𝕒𝕙𝕛𝕒𝕤𝚎𝚋**\n"
+        "• script       > **𝓇𝑜𝑒𝓂𝒶𝒽𝒂𝓈𝑒𝒷**\n"
+        "• blackbubbles > **🅡︎🅞︎🅔︎🅜︎🅐︎🅗︎🅙︎🅐︎🅢︎🅔︎🅑︎**\n"
+        "• bubbles      > **Ⓙ︎ⓞ︎Ⓔ︎Ⓜ︎Ⓐ︎Ⓗ︎ⓙ︎Ⓐ︎Ⓢ︎Ⓔ︎Ⓑ︎**\n"
+        "• bold         > **𝗿𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯**\n"
+        "• bolditalic   > **𝙧𝙤𝙚𝙢𝙖𝙝𝙟𝙖𝙨𝙚𝙗**\n\n"
+        "**𝗥𝗢𝗘𝗠𝗔𝗛𝗝𝗔𝗦𝗘𝗕-userbot!**"
+    )  # ✅ Tambahkan tanda `)` di sini!
+
 CMD_HELP.update({
     "yinsfont": """**Plugin :** `roemahjasebfont`
 
