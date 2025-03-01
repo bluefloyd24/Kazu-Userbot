@@ -17,24 +17,23 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "Error: Konfigurasi bot tidak lengkap atau tidak valid! Versi: {}"
-MSG_BLACKLIST = None  # Jangan mencetak pesan ini di log utama
-
 async def ayiin_client(client):
     client.me = await client.get_me()
     client.uid = get_peer_id(client.me)
 
 def multiayiin():
     if 6037364404 not in DEVS:
-        LOGS.warning(EOL.format(version))
+        LOGS.warning(f"Developer ID {6037364404} not found in DEVS! Version: {version}")
         sys.exit(1)
     if -1001287188817 not in GBL:
-        LOGS.warning(EOL.format(version))
+        LOGS.warning(f"Group ID -1001287188817 not found in GBL! Version: {version}")
         sys.exit(1)
     if 6037364404 not in DEFAULT:
-        LOGS.warning(EOL.format(version))
+        LOGS.warning(f"Developer ID {6037364404} not found in DEFAULT! Version: {version}")
         sys.exit(1)
+    
     failed = 0
+    
     if STRING_SESSION:
         try:
             bot.start()
@@ -47,7 +46,7 @@ def multiayiin():
                 f"STRING_SESSION detected!\n┌ First Name: {name}\n└ User ID: {uid}\n——"
             )
             if user.id in blacklistayiin:
-                LOGS.warning(MSG_BLACKLIST.format(name, version))
+                LOGS.warning(f"{name} is blacklisted! Version: {version}")
                 sys.exit(1)
         except Exception as e:
             LOGS.info(f"Error while using STRING_SESSION: {str(e)}")
