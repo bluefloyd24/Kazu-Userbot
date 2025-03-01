@@ -1,9 +1,9 @@
 {
-  "name": "𝗕𝗟𝗨𝗘𝗙𝗟𝗢𝗬𝗗-Userbot",
-  "description": " What? @blue ",
-  "logo": "https://telegra.ph/file/f4700c25168954f9b0382.jpg",
-  "keywords": ["telegram", "userbot", "bluefloyd-Userbot", "modular", "python"],
-  "repository": "https://github.com/bluefloyd24/Kazu-Userbot",
+  "name": "Roemahjaseb-Userbot",
+  "description": " What? @roemahjaseb ",
+  "logo": "https://vault.pictures/p/2bbbdcf75e0243349d7d72a735933657",
+  "keywords": ["telegram", "userbot", "roemahjaseb-Userbot", "modular", "python"],
+  "repository": "https://github.com/roemahjaseb/Kazu-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
