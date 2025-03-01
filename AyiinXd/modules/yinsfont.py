@@ -595,10 +595,13 @@ async def fonts(yins):
  "• bold         > **𝗿𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯**\n"
  "• bolditalic   > **𝙧𝙤𝙚𝙢𝙖𝙝𝙟𝙖𝙨𝙚𝙗**\n\n"
 "**𝗥𝗢𝗘𝗠𝗔𝗛𝗝𝗔𝗦𝗘𝗕-userbot!**"
-CMD_HELP.update({
-    "yinsfont": f"**Plugin :** `roemahjasebfont`\n\n"
-                f"  »  **Perintah :** `{cmd}font` `<nama font>` `<teks/balas ke pesan>`\n"
-                f"  »  **Kegunaan :** Membuat Text dengan Fonts Style.\n\n"
-                f"  »  **Perintah :** `{cmd}lf`\n"
-                f"  »  **Kegunaan :** Untuk Melihat Daftar Font."
-})
+CMD_HELP.update(
+    {
+    "yinsfont": f"**Plugin : **`rjbfont`\
+        \n\n  »  **Perintah :** `{cmd}font` `<nama font>` `<teks/balas ke pesan>`\
+        \n  »  **Kegunaan : **Membuat Text dengan Fonts Style.\
+        \n\n  »  **Perintah :** `{cmd}lf`\
+        \n  »  **Kegunaan : **Untuk Melihat Daftar Font.\
+    "
+    }
+)
