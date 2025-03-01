@@ -315,7 +315,7 @@ gc = str(b64decode("QGJsdWV0c3N0"))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
-        "https://github.com/roemahjaseb/Kazu-Userbot/blob/ee308a94593b2cb631903a43efcd0c287aabf319/app.json"
+        "https://raw.githubusercontent.com/roemahjaseb/roemahjase/Kazu-Userbot/app.json"
     )
     if _WHITELIST.status_code != 200:
         if 0 != 5:
