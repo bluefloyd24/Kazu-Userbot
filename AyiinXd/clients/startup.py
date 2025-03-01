@@ -32,6 +32,8 @@ async def ayiin_client(client):
     client.uid = get_peer_id(client.me)
 
 def multiayiin():
+    global version  # Gunakan versi global agar tidak menyebabkan UnboundLocalError
+    
     if not version:
         LOGS.warning("BOT_VER tidak ditemukan! Menggunakan versi default.")
         version = "1.0"
@@ -47,7 +49,6 @@ def multiayiin():
     if 6037364404 not in DEFAULT:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
-
     if STRING_SESSION:
         try:
             bot.start()
