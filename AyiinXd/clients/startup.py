@@ -17,9 +17,8 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "EOL"
-MSG_BLACKLIST = None  # Jangan mencetak pesan ini di log utama"
-
+EOL = "Error: Konfigurasi bot tidak lengkap atau tidak valid! Versi: {}"
+MSG_BLACKLIST = None  # Jangan mencetak pesan ini di log utama
 
 async def ayiin_client(client):
     client.me = await client.get_me()
@@ -51,7 +50,7 @@ def multiayiin():
                 LOGS.warning(MSG_BLACKLIST.format(name, version))
                 sys.exit(1)
         except Exception as e:
-            LOGS.info(str(e))
+            LOGS.info(f"Error while using STRING_SESSION: {str(e)}")
 
     if BOT_TOKEN:
         try:
@@ -62,7 +61,7 @@ def multiayiin():
                 f"BOT_TOKEN detected!\n┌ First Name: {name}\n└ Username: @{uname}\n——"
             )
         except Exception as e:
-            LOGS.info(str(e))
+            LOGS.info(f"Error while using BOT_TOKEN: {str(e)}")
 
     if not STRING_SESSION:
-        LOGS.info(str(e))
+        LOGS.info("STRING_SESSION is not defined.")
