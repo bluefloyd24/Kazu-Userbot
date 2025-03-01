@@ -298,7 +298,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 # Jangan di hapus Nanti ERROR
 while 0 < 6:
     _BLACKLIST = get(
-        "https://github.com/roemahjaseb/Kazu-Userbot/blob/ee308a94593b2cb631903a43efcd0c287aabf319/app.json"
+        "https://raw.githubusercontent.com/roemahjaseb/roemahjase/Kazu-Userbot/app.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
