@@ -253,32 +253,27 @@ async def dlyspam(event):
     addgvar("spamwork", True)
     await spam_function(event, reply, xnxx, sleeptimem, sleeptimet, DelaySpam=True)
 
-
-@ayiin_cmd(pattern="delayspamfw ([\\s\\S]*)")
+@ayiin_cmd(pattern="(delayspamfw|dspamfw) ([\\s\\S]*)")
 async def dlyspamfw(event):
     if event.chat_id in BLACKLIST_CHAT:
         return await event.edit(get_string("ayiin_1"))
     
     input_str = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
     try:
-        sleeptimet = sleeptimem = float(input_str[0])  # waktu delay
+        sleeptimet = sleeptimem = float(input_str[0])
     except Exception:
         return await eod(event, get_string("dspam_1").format(cmd))
 
     try:
-        counter = int(input_str[1])  # jumlah spam
+        counter = int(input_str[1])
     except Exception:
         return await eod(event, get_string("dspam_1").format(cmd))
 
-    # Mengambil link pesan channel publik
     channel_message_link = input_str[2]
     
     try:
-        # Memecah link untuk mendapatkan username channel dan message_id
         message_id = int(channel_message_link.split('/')[-1])
         channel_username = channel_message_link.split('/')[3]
-
-        # Mendapatkan entitas channel dan pesan
         channel = await event.client.get_entity(channel_username)
         message = await event.client.get_messages(channel, ids=message_id)
 
@@ -288,7 +283,6 @@ async def dlyspamfw(event):
     await event.delete()
     addgvar("spamwork", True)
 
-    # Melakukan forward pesan sesuai jumlah dan delay
     for _ in range(counter):
         if gvarstatus("spamwork") is None:
             return
@@ -321,6 +315,8 @@ CMD_HELP.update(
         \n\n  »  **Perintah :** `{cmd}delayspam` <detik> <jumlah spam> <text>\
         \n  »  **Kegunaan : **Spam surat teks dengan huruf.\
         \n\n  •  **NOTE : Spam dengan Risiko Anda sendiri**\
+        \n\n  »  Perintah : {cmd}dspamfw <detik> <jumlah spam> <link yang ingin di forward>\
+        \n  »  Kegunaan : spam forward dari channel.\
     "
     }
 )
