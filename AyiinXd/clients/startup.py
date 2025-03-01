@@ -23,8 +23,8 @@ from AyiinXd import (
 )
 from AyiinXd.modules.gcast import GCAST_BLACKLIST as GBL
 
-EOL = "EOL\nRoemahjaseb-Userbot v{} Copyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/Kazu-Userbot>"
-MSG_BLACKLIST = "Roemahjaseb-Userbot v{}\nCopyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/Kazu-Userbot>"
+EOL = "EOL\nRoemahjaseb-Userbot v{} Copyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/roemahjase>"
+MSG_BLACKLIST = "Roemahjaseb-Userbot v{}\nCopyright © 2021-2025 RoemahjasebUSERBOT• <https://github.com/roemahjaseb/roemahjase>"
 
 
 async def ayiin_client(client):
