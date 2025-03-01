@@ -1,8 +1,8 @@
 {
-  "name": "Roemahjaseb-Userbot",
-  "description": "What? @roemahjaseb",
+  "name": "𝗥𝗼𝗲𝗺𝗮𝗵𝗷𝗮𝘀𝗲𝗯-Userbot",
+  "description": "-𝗕𝗬 @roemahjaseb on telegram-",
   "logo": "https://vault.pictures/p/2bbbdcf75e0243349d7d72a735933657",
-  "keywords": ["telegram", "userbot", "roemahjaseb-Userbot", "modular", "python"],
+  "keywords": ["telegram", "userbot", "ixall-Userbot", "modular", "python"],
   "repository": "https://github.com/roemahjaseb/roemahjase",
   "stack": "container",
   "env": {
@@ -14,7 +14,7 @@
       "description": "Dapatkan API Hash di my.telegram.org",
       "required": true
     },
-    "STRING_SESSION": {
+     "STRING_SESSION": {
       "description": "Dapatkan String Session di @strgen_bot",
       "required": true
     },
@@ -32,9 +32,9 @@
       "required": false
     }
   },
-  "addons": [
+"addons": [
     {
-      "plan": "heroku-postgresql",
+    "plan": "heroku-postgresql",
       "options": {
         "version": "15"
       }
@@ -48,6 +48,7 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
     }
   ],
+
   "formation": {
     "worker": {
       "quantity": 1,
