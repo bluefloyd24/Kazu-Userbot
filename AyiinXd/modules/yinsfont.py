@@ -597,7 +597,6 @@ async def fonts(yins):
 "**𝗥𝗢𝗘𝗠𝗔𝗛𝗝𝗔𝗦𝗘𝗕-userbot!**"
 CMD_HELP.update({
     "yinsfont": f"**Plugin :** `roemahjasebfont`\n\n"
-                f"  »  **Fungsi :** Mengubah teks ke berbagai jenis font.\n"
                 f"  »  **Perintah :** `{cmd}font` `<nama font>` `<teks/balas ke pesan>`\n"
                 f"  »  **Kegunaan :** Membuat Text dengan Fonts Style.\n\n"
                 f"  »  **Perintah :** `{cmd}lf`\n"
