@@ -72,8 +72,7 @@ Selamat bersenang-senang.
 <summary><b>🔗 Deploy To Heroku</b></summary>
 <br>
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/roemahjaseb/roemahjase/tree/Kazu-Userbot"><img src="https://img.shields.io/badge/BUAT DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold"width="300" /></a></p>
-
+<p><a href="https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Froemahjaseb%2Froemahjase"><img src="https://img.shields.io/badge/BUAT%20DI-HEROKU-aqua?style=plastic&logo=heroku&logoColor=gold" width="300" /></a></p>
 </details>
 
 <details>
@@ -101,11 +100,7 @@ Follow Channel [Kazu Session](https://t.me/Html12text) untuk info Update bot dan
 -  [Alvin](https://github.com/Zora24/Lord-Userbot) : Lord-Userbot
 -  [AyiinXd](https://github.com/AyiinXd/Ayiin-Userbot) : Ayiin-Userbot
 -  [sip-Userbot](https://github.com/sip-Userbot/Nande-Telethon): Nande-Telethon
--  [IamUput](https://github.com/iamuput/Uputt-Userbot): Uputt-Userbot
--  [ionmusic](https://github.com/ionmusic/Kazu-Userbot) : Kazu-Userbot
--  [ArmanGG01](https://github.com/ArmanGG01/KARMAN-USERBOT) : KARMAN-USERBOT
-
-## © Credits
+-  [IamUput](https://github.com/iamuput/Uputt-U# © Credits
 -  [MarshalX](https://github.com/MarshalX) for [PyTgcalls](https://github.com/MarshalX/tgcalls)
 -  [Lonami](https://github.com/LonamiWebs/) for [Telethon](https://github.com/LonamiWebs/Telethon)
 -  [Risman](https://github.com/mrismanaziz) for [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)
@@ -113,5 +108,28 @@ Follow Channel [Kazu Session](https://t.me/Html12text) untuk info Update bot dan
 -  [sip-Userbot](https://github.com/sip-Userbot) for [Nande-Telethon](https://github.com/sip-Userbot/Nande-Telethon)
 -  [IamUput](https://github.com/iamuput) for [Uputt-Userbot](https://github.com/iamuput/Uputt-Userbot)
 -  [ionmusic](https://github.com/ionmusic) for [Kazu-Userbot](https://github.com/ionmusic/Kazu-Userbot)
+## License
+Licensed under [Raphielscape Public License](https://github.com/ionmusic/KazuUBot/blob/KazuUBot/LICENSE) - Version 1.d, February 2020
+
+
+serbot): Uputt-Userbot
+-  [ionmusic](https://github.com/ionmusic/Kazu-Userbot) : Kazu-Userbot
+-  [ArmanGG01](https://github.com/ArmanGG01/KARMAN-USERBOT) : KARMAN-USERBOT
+
+## Credits
+- [MarshalX](https://github.com/MarshalX) for [PyTgcalls](https://github.com/MarshalX/tgcalls)
+- [Lonami](https://github.com/LonamiWebs/) for [Telethon](https://github.com/LonamiWebs/Telethon)
+- [Risman](https://github.com/mrismanaziz) for [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)
+- [AyiinXd](https://github.com/AyiinXd) for [Ayiin-Userbot](https://github.com/AyiinXd/Ayiin-Userbot)
+- [sip-Userbot](https://github.com/sip-Userbot) for [Nande-Telethon](https://github.com/sip-Userbot/Nande-Telethon)
+- [IamUput](https://github.com/iamuput) for [Uputt-Userbot](https://github.com/iamuput/Uputt-Userbot)
+- [ionmusic](https://github.com/ionmusic) for [Kazu-Userbot](https://github.com/ionmusic/Kazu-Userbot)
+
+## Modifikasi
+Repositori ini adalah **modifikasi** dari proyek [Kazu-Userbot](https://github.com/ionmusic/Kazu-Userbot) yang dikembangkan oleh [ionmusic](https://github.com/ionmusic). Semua perubahan yang dilakukan disesuaikan untuk keperluan penggunaan **Roemah Jaseb** dan telah disesuaikan dengan kebutuhan pengguna.
+
+### Izin
+Repositori ini digunakan dengan izin dari pemilik asli proyek. Kami menghargai kontribusi dari pengembang asli dan meminta izin untuk menggunakan serta memodifikasi kode sumber sesuai kebutuhan. Jika ada pertanyaan atau permintaan terkait penggunaan kode ini, jangan ragu untuk menghubungi kami.
+
 ## License
 Licensed under [Raphielscape Public License](https://github.com/ionmusic/KazuUBot/blob/KazuUBot/LICENSE) - Version 1.d, February 2020
