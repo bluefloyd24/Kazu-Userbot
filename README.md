@@ -6,8 +6,7 @@ RoemahJaseb Userbot adalah userbot Telegram yang dikembangkan untuk kebutuhan ot
 
 Klik tombol di bawah untuk langsung **deploy** RoemahJaseb Userbot ke Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Froemahjaseb%2FKazu-Userbot%2Ftree%2FKazu-Userbot)
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/roemahjaseb/roemahjase)
 
 ## 📌 Cara Menggunakan
 1. Klik tombol **Deploy to Heroku** di atas.
