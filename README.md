@@ -3,7 +3,6 @@
 RoemahJaseb Userbot adalah userbot Telegram yang dikembangkan untuk kebutuhan otomatisasi dan fitur canggih di Telegram.
 
 ## 🚀 Deploy ke Heroku
-## 🚀 Deploy ke Heroku
 
 Klik tombol di bawah untuk langsung **deploy** RoemahJaseb Userbot ke Heroku:
 
