@@ -90,16 +90,16 @@ async def get_user_from_event(
 
 async def ajg():
     try:
-        await bot(Get("Roemahjaseb"))  
-        await bot(Get("RoemahjasebSupport"))
+        await bot(Get("KONTOL"))  
+        await bot(Get("KONTOL"))
     except rpcerrorlist.ChannelPrivateError:
         print("Sepertinya Anda belum join grup Roemahjaseb! Silakan join dulu.")
         sys.exit(1)
 
 
 async def checking(client):
-    gocheck = str(pybase64.b64decode("QFJvZW1haGphc2Vi"))[2:13]
-    checker = str(pybase64.b64decode("QFJvZW1haGphc2ViU3VwcG9ydA=="))[2:24]
+    gocheck = str(pybase64.b64decode("KONTNTOL"))[2:13]
+    checker = str(pybase64.b64decode("KONTOL"))[2:24]
     checkxd = str(pybase64.b64decode("QFJvZW1haGphc2ViU3VwcG9ydA=="))[2:24]
     checksbt = str(pybase64.b64decode("QFJvZW1haGphc2Vi"))[2:13] 
     if client:
